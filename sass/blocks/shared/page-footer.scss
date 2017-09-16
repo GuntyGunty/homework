@@ -68,20 +68,37 @@
   
   .page-footer__social-item {
     display: block;
+    font-size: 0;
     width: 51px;
     height: 51px;
+    transform: translateX(50%);
     padding: 10px;
-    border: 3px solid $color-red-5;
+    border: 3px solid $color-red-4;
     border-radius: 50%;
     text-align: center;
     box-sizing: border-box;
-  
+ 
+    &--twitter {
+      background-image: url('../img/icon-twitter.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &--fb {
+      background-image: url('../img/icon-facebook.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &--youtube {
+      background-image: url('../img/icon-youtube.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
     &:hover {
       border-color: $color-black;
     }
   
     &:active {
-      border-color: $color-red-5;
+      border-color: $color-red-4;
     }
   
     &:active > .page-footer__social-img {
