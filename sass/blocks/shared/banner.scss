@@ -104,7 +104,7 @@
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
   }
   .banner__inner {
-    padding: 25px 117px 0 0;
+    padding: 25px 10px 0 0;
   }
   .intro__img {
     position: static;
@@ -112,7 +112,6 @@
     align-self: flex-end;
   }
   .banner__title {
-    width: 620px;
     display: inline-block;
     font-size: $font-size__title--hugest;
     line-height: $font-size__title--hugest;

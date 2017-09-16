@@ -127,7 +127,9 @@
     padding-right: 14px;
     margin-bottom: 7px;
   }
-  
+  .page-footer__copyright-link {
+    text-decoration: none;
+  }
   .page-footer__copyright-link {
     &:hover > .page-footer__copyright-img {
       fill: $color-black;
