@@ -1,0 +1,62 @@
+.slider {
+  overflow: hidden;
+}
+
+.slider__item {
+  display: none;
+  &--active {
+    display: block;
+  }
+}
+
+.slider__pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.slider__pagination-item {
+  width: 12px;
+  height: 12px;
+  border: 3px solid $color-white;
+  border-radius: 50%;
+  background-color: $color-gray-5;
+  margin-right: 13px;
+  &--active {
+    border-color: $color-background-gray;
+    background-color: $color-white;
+  }
+}
+
+.slider__arrow {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .packets .slider__pagination {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .slider__pagination {
+    display: none;
+  }
+  .slider__arrow {
+    @include reset-button-style;
+    display: block;
+    position: absolute;
+    font-size: $font-size__arrow;
+    top: 160px;
+    width: 22px;
+    height: 42px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    &--last {
+      right: 0;
+    }
+    &--next {
+      left: 0;
+    }
+  }
+}

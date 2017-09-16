@@ -1,0 +1,35 @@
+.slogan {
+  display: block;
+  text-align: center;
+  padding: 43px 0 32px 0;
+}
+
+.slogan__title {
+  margin: 0;
+  font-size: $font-size__title--big;
+  font-weight: 100;
+  &:first-child {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .slogan__title {
+    font-size: $font-size__title--huge;
+    text-align: center;
+    &:first-child {
+      width: 320px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .slogan__title {
+    font-size: $font-size__title--hugest;
+    &:nth-last-child(1) {
+      width: 490px;
+      margin: 0 auto;
+    }
+  }
+}

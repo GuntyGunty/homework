@@ -1,0 +1,218 @@
+  .contacts {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 44px;
+  }
+
+  .contact__title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: $font-size__title--big;
+    line-height: $font-size__title--big;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .contacts__inner {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 37px;
+    background-color: $color-white; // &:after {
+    //   content: '';
+    //   pointer-events: none;
+    //   position: absolute;
+    //   top: 100%;
+    //   display: block;
+    //   height: 35px;
+    //   width: 100%;
+    //   background-image: url(../img/bg-triangle-white-footer.svg);
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center -1px;
+    // }
+  }
+
+  .contact__list {
+    @include reset-list-style;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__item {
+    margin-bottom: 19px;
+    &:nth-child(3) {
+      margin-bottom: 23px;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
+
+  .contact__item-name {
+    display: block;
+    font-size: $font-size__title;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .contact__link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: $font-size__title--big;
+    font-weight: 100;
+    color: $color-red;
+    &--adress {
+      width: 250px;
+      margin: 0 auto;
+    }
+    &--mail {
+      color: $color-background-gray;
+    }
+  }
+
+  .contacts__map {
+    max-width: 320px;
+    position: relative;
+    background: $color-white-gray url("../img/bg-map-mobile@1x.png") center top no-repeat;
+    background-size: cover;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 32px;
+      top: -1px;
+      background: url("../img/bg-triangle-white-footer.svg") center no-repeat;
+      background-size: 100%;
+      z-index: 1;
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background: $color-white-gray url("../img/bg-map-mobile@2x.jpg") center top no-repeat;
+    }
+  }
+
+  .contacts__google-map {
+    height: 200px;
+  }
+
+  @media (min-width: $tablet-widths) {
+
+    .contacts {
+      width: 620px;
+      padding-top: 18px;
+    }
+
+    .contacts__inner {
+      padding: 26px;
+      padding-bottom: 0;
+    }
+
+    .contacts__inner:after {
+      height: 70px;
+    }
+
+    .contact__item {
+
+      margin-bottom: 19px;
+
+      &:nth-child(3) {
+        margin-bottom: 48px;
+      }
+    }
+
+      .contact__title {
+        width: 370px;
+        font-size: $font-size__title--huge;
+        line-height: $font-size__title--hugest;
+        margin-bottom: 42px;
+      }
+
+      .contact__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .contact__list-item {
+        margin-bottom: 52px;
+      }
+
+      .contact__link {
+        &--mail {
+          text-decoration: none;
+        }
+      }
+
+      .contacts__map {
+        max-width: 660px;
+        height: 380px;
+        margin-bottom: 20px;
+        background-image: url("../img/bg-map-tablet@1x.jpg");
+        &::before {
+          height: 67px;
+          background-size: 120% 100%;
+        }
+      }
+      @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        .contacts__map {
+          background-image: url("../img/bg-map-tablet@2x.jpg");
+        }
+      }
+      .contacts__google-map {
+        max-width: 660px;
+        height: 380px;
+      }
+    }
+  
+
+  @media (min-width: $desktop-widths) {
+    .contacts {
+      width: $desktop-widths;
+      padding: 0 10px;
+    }
+    .contacts__inner {
+      padding-top: 65px;
+      &:after {
+        height: 127px;
+      }
+    }
+    .contacts__title {
+      width: 465px;
+      font-size: $font-size__title--hugest;
+      margin-bottom: 65px;
+    }
+    .contact__item-name {
+      margin-bottom: 25px;
+    }
+   
+    .contact__item:nth-child(3) {
+      order: 3;
+    }
+    .contacts__map {
+      height: 500px;
+      width: 100%;
+      max-width: 1200px;
+      background-image: url("../img/bg-map-desktop@1x.jpg");
+      &::before {
+        height: 102px;
+      }
+    }
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      .contacts__map {
+        background-image: url("../img/bg-map-desktop@2x.jpg");
+      }
+    }
+    .contacts__google-map {
+      height: 500px;
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
