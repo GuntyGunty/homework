@@ -41,13 +41,14 @@
   margin: 0 auto;
   @include reset-list-style;
   padding: 22px 40px 54px 40px;
-  
 }
+
 .presentation__list-container {
   margin: 0 auto;
   width: $mobile-width;
   border-bottom: 2px solid $color-gray-4;
 }
+
 .presentation__item {
   position: relative;
   display: inline-block;
@@ -95,10 +96,12 @@
 .presentation__tool:active .presentation__tool-img {
   fill: $color-red;
 }
+
 .presentation__btn-container {
   width: 280px;
   padding: 0 20px;
 }
+
 .presentation__btn-submit,
 .presentation__btn-reset {
   width: 280px;
@@ -144,8 +147,9 @@
     max-width: $tablet-widths;
   }
   .presentation__title-container {
-    width: 440px;
-    padding: 45px 0 70px;
+    max-width: 660px;
+    padding: 47px 0 40px;
+    margin-bottom: 30px;
   }
   .presentation__title {
     font-size: $font-size__title;
@@ -156,7 +160,7 @@
     justify-content: space-between;
     align-items: flex-start;
     max-width: 660px;
-    padding: 57px 20px 55px;
+    padding: 57px 0 55px;
   }
   .presentation__link-img,
   .presentation__img {
@@ -170,6 +174,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 288px;
+    margin-right: 23px;
     min-height: 400px;
   }
   .presentation__list {
@@ -181,10 +186,19 @@
     padding: 0;
     border-bottom: none;
   }
+  .presentation__list-container {
+    width: 280px;
+    margin: 0 auto;
+    border-bottom: none;
+  }
   .presentation__item {
     width: 288px;
     margin: 0;
     border-bottom: 1px solid $color-gray-4;
+  }
+  .presentation__btn-container {
+    width: 280px;
+    padding: 0;
   }
   .presentation__tool {
     display: flex;
@@ -233,6 +247,9 @@
   }
   .presentation__btn-submit {
     margin-top: auto;
+  }
+  .presentation__btn-container {
+ margin-left: 20px;
   }
 }
 
