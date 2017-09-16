@@ -3,6 +3,10 @@
   text-align: center;
   padding: 46px 0 32px 0;
   margin-bottom: 17px;
+  &--photo {
+    padding: 45px 0 0px 0;
+    margin-bottom: 12px;
+  }
 }
 
 .slogan__title {
@@ -19,8 +23,13 @@
   margin: 0 auto;
   font-size: $font-size__text--more;
   line-height: $font-size__text--big;
+  &--form {
+    width: 280px;
+  }
 }
-
+.slogan__text-span {
+  @include visually-hidden;
+}
 @media (min-width: $tablet-widths) {
   .slogan {
     padding: 90px 0 60px 0;

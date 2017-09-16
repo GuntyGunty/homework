@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat, no-repeat;
-  background-color: #1d2631;
+  background-color: $color-gray-2;
   background-size: 258px, 698px;
   background-position: left 174px, center top;
 }
@@ -52,7 +52,16 @@
     padding-top: 16px;
   }
 }
-
+.banner__form-title {
+  width: 250px;
+  padding-top: 39px;
+  background: transparent;
+  font-size: $font-size__title--big;
+  line-height: $font-size__text--big;
+}
+.banner__form-page {
+  min-height: 236px;
+}
 .banner__form-page,
 .banner__photo-page {
   background-image: none, url(../img/bg-back-mobile@1x.jpg);

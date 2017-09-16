@@ -11,7 +11,9 @@
   width: 280px;
   padding: 17px 10px;
   border-radius: 2px;
-  border-radius: 25px;
+  font-size: $font-size__title;
+  border-radius: 5px;
+  line-height: $font-size__text--big;
   @include reset-button-style;
   text-transform: uppercase;
   line-height: $font-size__text--big;
