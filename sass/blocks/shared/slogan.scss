@@ -28,7 +28,7 @@
   }
 }
 .slogan__text-span {
-  @include visually-hidden;
+  display: none;
 }
 @media (min-width: $tablet-widths) {
   .slogan {
@@ -56,7 +56,7 @@
 
 @media (min-width: $desktop-widths) {
   .slogan {
-    padding: 90px 0 70px 0;
+    padding: 93px 0 48px 0;
   }
   .slogan__title {
     font-size: $font-size__title--hugest;
@@ -66,8 +66,11 @@
     }
   }
   .slogan__text {
-    width: 590px;
+    width: 800px;
     font-size: $font-size__title;
     line-height: $font-size__text--big;
+  }
+  .slogan__text-span {
+    display: inline-block;
   }
 }

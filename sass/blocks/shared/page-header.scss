@@ -68,7 +68,6 @@
   border-top: 1px solid $color-light-gray;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: $font-size__title;
   color: $color-white;
@@ -139,9 +138,11 @@
 .page-header--closed .page-header__img-btn-open {
   display: block;
 }
+
 .page-header--closed .page-header__btn-close {
   margin-right: 25px;
 }
+
 .page-header--closed .page-header__img-btn-close {
   display: none;
 }
@@ -157,9 +158,11 @@
 .page-header--opened .page-header__img-btn-close {
   display: block;
 }
+
 .page-header--opened .page-header__btn-close {
   margin-top: 13px;
 }
+
 .page-header--opened .page-header__img-btn-open {
   display: none;
 }
@@ -184,6 +187,7 @@
   display: block;
   top: 65px;
 }
+
 // .page-header__btn-close .page-header__img-btn-open  {
 // margin-right: 25px;
 // }
@@ -214,20 +218,18 @@
   .page-header__nav--open .page-header__list {
     top: 105px;
   }
-  .page-header__item>.page-header__link {
-width: 660px;
-  }
+    .page-header__item>.page-header__link {
+  width: 660px;
+    }
   .page-header__nav--open .page-header__inner {
     background-color: $color-background-gray;
     border-bottom: 1px solid $color-black;
     min-height: 56px;
-  }
-  // .page-header__nav--open .page-header__btn-close {
+  } // .page-header__nav--open .page-header__btn-close {
   //   height: 30px;
   //   padding: 12px 0 0 0;
   //   margin: 0
   // }
- 
 }
 
 @media (min-width: $desktop-widths) {
@@ -248,6 +250,7 @@ width: 660px;
   }
   .page-header__inner {
     position: static;
+    margin-right: 160px;
     min-height: auto;
     padding: 0;
   }
@@ -255,8 +258,6 @@ width: 660px;
     display: flex;
     padding-top: 25px;
     padding-bottom: 36px;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     width: 940px;
     margin: 0 auto;
@@ -264,8 +265,12 @@ width: 660px;
   .page-header__list {
     display: flex;
     top: 0;
-    width: 622px;
+    width: 624px;
     justify-content: space-between;
+  }
+  .page-header__item {
+    margin-right: 30px;
+    display: block;
   }
   .page-header__burger {
     display: none;
@@ -273,10 +278,8 @@ width: 660px;
   .page-header__btn-close {
     display: none;
   }
-  .page-header__item {
-    display: block;
-  }
   .page-header__item>.page-header__link {
+    width: 100px;
     background-color: transparent;
     padding-top: 22px;
     padding-bottom: 20px;
