@@ -8,7 +8,9 @@
     display: block;
    }
   }
-
+  .page-footer__wrapper {
+    padding: 40px 0 40px 0;
+  }
   .page-footer__inner {
     max-width: $mobile-width;
     margin: 0 auto;
@@ -94,7 +96,7 @@
   
   .page-footer__copyright {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 0 27px;
   }
@@ -102,6 +104,7 @@
   .page-footer__copyright-text {
     color: $color-light-gray;
     margin: 0;
+    padding-right: 14px;
     margin-bottom: 7px;
   }
   
