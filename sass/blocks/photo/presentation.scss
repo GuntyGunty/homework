@@ -6,15 +6,14 @@
 .presentation__title-container {
   max-width: $mobile-width;
   margin: 0 auto;
-  padding: 41px 10px;
+  padding: 41px;
   background-color: $color-white;
   box-sizing: border-box;
 }
 
 .presentation__title {
   text-align: center;
-  padding: 0;
-  margin: 0;
+  @include reset-text-style;
   font-size: $font-size__text--more;
   font-weight: 400;
   line-height: 30px;
@@ -24,7 +23,7 @@
 .presentation__wrapper {
   max-width: $mobile-width;
   margin: 0 auto;
-  padding: 20px 20px 40px;
+  padding: 21px 0 40px 0;
   background-color: $color-white-gray;
   box-sizing: border-box;
 }
@@ -34,19 +33,25 @@
   width: 280px;
   height: 375px;
   margin: 0 auto;
+  padding: 0 10px 0 9px;
 }
 
 .presentation__list {
+  width: 240px;
   margin: 0 auto;
   @include reset-list-style;
-  padding: 22px 10px 54px 18px;
+  padding: 22px 40px 54px 40px;
+  
+}
+.presentation__list-container {
+  margin: 0 auto;
+  width: $mobile-width;
   border-bottom: 2px solid $color-gray-4;
 }
-
 .presentation__item {
   position: relative;
   display: inline-block;
-  margin: 15px;
+  margin: 15px 13px 15px 15px;
   vertical-align: middle;
   box-sizing: border-box;
 }
@@ -58,7 +63,6 @@
   background: $color-black;
   cursor: pointer;
   outline: none;
-
   &--active {
     display: block;
     position: absolute;
@@ -67,8 +71,7 @@
     width: 242px;
     outline: none;
   }
-
-  &::-webkit-slider-thumb { 
+  &::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 15px;
     width: 15px;
@@ -80,7 +83,6 @@
 
 .presentation__tool-img {
   fill: $color-gray-13;
-
   &--crop {
     fill: $color-red;
   }
@@ -93,10 +95,15 @@
 .presentation__tool:active .presentation__tool-img {
   fill: $color-red;
 }
-
+.presentation__btn-container {
+  width: 280px;
+  padding: 0 20px;
+}
 .presentation__btn-submit,
 .presentation__btn-reset {
   width: 280px;
+  font-size: $font-size__title;
+  font-weight: bold;
   padding: 16px 20px;
   border: 3px solid $color-red;
   color: $color-red;
@@ -107,14 +114,12 @@
 }
 
 .presentation__btn-submit {
-  margin: 38px 0 12px;
+  margin: 35px 0 12px;
   border-radius: 25px;
-
   &:hover {
     background-color: $color-red;
     color: $color-white;
   }
-
   &:active {
     color: $color-red-7;
   }
@@ -124,33 +129,27 @@
   border: 2px solid $color-gray-4;
   color: $color-gray-4;
   border-radius: 25px;
-
   &:hover {
     border-color: $color-gray-13;
     color: $color-gray-13;
   }
-
   &:active {
     background-color: $color-gray-13;
     color: $color-gray-4;
   }
 }
 
-
 @media (min-width: $tablet-widths) {
   .presentation {
     max-width: $tablet-widths;
   }
-
   .presentation__title-container {
     width: 440px;
     padding: 45px 0 70px;
   }
-
   .presentation__title {
     font-size: $font-size__title;
   }
-
   .presentation__wrapper {
     display: flex;
     flex-direction: row;
@@ -159,14 +158,12 @@
     max-width: 660px;
     padding: 57px 20px 55px;
   }
-
   .presentation__link-img,
   .presentation__img {
     width: 300px;
     height: 400px;
     margin: 0;
   }
-
   .presentation__form {
     display: flex;
     flex-direction: column;
@@ -175,7 +172,6 @@
     width: 288px;
     min-height: 400px;
   }
-
   .presentation__list {
     display: flex;
     flex-direction: column;
@@ -185,13 +181,11 @@
     padding: 0;
     border-bottom: none;
   }
-
   .presentation__item {
     width: 288px;
     margin: 0;
     border-bottom: 1px solid $color-gray-4;
   }
-
   .presentation__tool {
     display: flex;
     justify-content: space-between;
@@ -199,29 +193,24 @@
     width: 275px;
     padding: 25px 5px 23px 14px;
     box-sizing: border-box;
-
     &--crop {
       padding-top: 8px;
     }
   }
-
   .presentation__tool-img {
     width: 25px;
     height: 25px;
     fill: $color-red;
-
     &--fill {
       height: 22px;
       margin-top: 1px;
     }
-
     &--contrast {
       width: 17px;
       height: 17px;
       margin-left: 5px;
     }
   }
-
   .presentation__tool-togler {
     display: block;
     position: relative;
@@ -231,7 +220,6 @@
     padding: 0;
     margin: 0;
   }
-
   .presentation__btn-submit,
   .presentation__btn-reset {
     align-self: center;
@@ -243,12 +231,10 @@
     font-weight: 700;
     box-sizing: border-box;
   }
-
   .presentation__btn-submit {
     margin-top: auto;
   }
 }
-
 
 @media (min-width: $desktop-widths) {
   .presentation {
@@ -256,54 +242,44 @@
     max-width: 1200px;
     padding-bottom: 27px;
   }
-
   .presentation__title-container {
     padding: 5px 0 66px;
   }
-
   .presentation__wrapper {
     max-width: 940px;
     margin: 0 auto;
     padding: 56px 61px 56px 80px;
   }
-
   .presentation__link-img,
   .presentation__img {
     width: 300px;
     height: 400px;
   }
-
   .presentation__form {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-between;
     width: 411px;
   }
-
   .presentation__list,
   .presentation__item {
     width: 411px;
   }
-
   .presentation__tool {
     width: 411px;
     padding: 13px 30px 10px 0;
-
     &--crop {
       padding: 0 30px 9px 0;
     }
   }
-
   .presentation__tool-img {
     width: 46px;
     height: 46px;
-
     &--fill {
       width: 48px;
       height: 48px;
       margin-top: 1px;
     }
-
     &--contrast {
       width: 33px;
       height: 33px;
@@ -311,12 +287,10 @@
       padding-top: 5px;
     }
   }
-
   .presentation__tool-togler {
     width: 288px;
   }
-
-  .presentation__btn-submit ,
+  .presentation__btn-submit,
   .presentation__btn-reset {
     width: 185px;
     padding: 15px 45px;

@@ -1,11 +1,14 @@
 .page-footer {
     width: 100%;
     margin: 0 auto;
-  
-  }
-  .page-footer--index {
+   &--index {
     display: none;
+   }
+   &--photo {
+    display: block;
+   }
   }
+
   .page-footer__inner {
     max-width: $mobile-width;
     margin: 0 auto;

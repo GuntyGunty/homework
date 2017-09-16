@@ -309,6 +309,7 @@
           </picture>
         </a>
         <form class="presentation__form" method="post" action="https://echo.htmlacademy.ru/">
+          <div class="presentation__list-container">
           <ul class="presentation__list">
             <li class="presentation__item">
               <label class="presentation__tool  presentation__tool--crop  presentation__tool--active" for="crop">
@@ -316,7 +317,7 @@
                   <path fill="none" d="M0,0h48v48H0V0z"/>
                   <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                 </svg>
-                <input class="presentation__tool-togler  presentation__tool-togler--crop  presentation__tool-togler--active" type="range" min="1" max="100" step="3" value="78" id="crop">
+                <input class="presentation__tool-togler  presentation__tool-togler--crop  presentation__tool-togler--active" type="range" min="1" max="100" step="3" value="87" id="crop">
               </label>
             </li>
             <li class="presentation__item">
@@ -339,14 +340,17 @@
               </label>
             </li>
           </ul>
+        </div>
+        <div class="presentation__btn-container">
           <button class="presentation__btn-submit" type="submit">Запостить</button>
           <button class="presentation__btn-reset" type="reset">Отмена</button>
+          </div>
         </form>
       </div>
     </section>
 
   </main>
-  <footer class="page-footer  page-footer--index">
+  <footer class="page-footer  page-footer--photo">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-link" href="#">
         <svg class="page-footer__logo-img  page-footer__logo-img--mobile" id="logo-pink-blue-mobile" xmlns="http://www.w3.org/2000/svg"
