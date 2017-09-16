@@ -95,6 +95,7 @@
 .page-header__btn-close {
   width: 24px;
   height: 27px;
+  margin-right: 25px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -105,6 +106,7 @@
 .page-header__img-btn-close {
   width: 24px;
   height: 24px;
+  display: inline-block;
   fill: $color-white;
   &:hover {
     fill: $color-red-2;
@@ -118,7 +120,6 @@
 .page-header__img-btn-open {
   display: none;
   width: 50px;
-  height: 50px;
   &:hover {
     fill: $color-red-2;
   }

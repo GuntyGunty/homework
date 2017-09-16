@@ -26,6 +26,10 @@
 }
 .banner__inner {
   padding-top: 462px;
+  &--photo {
+    width: 240px;
+    padding-top: 0;
+  }
 }
 
 .intro__img {
@@ -36,11 +40,17 @@
 }
 
 .banner__title {
-  color: #fff;
+  color: $color-white;
   align-self: center;
   text-align: center;
   margin: 0;
   font-weight: 100;
+  &--photo {
+    font-size: $font-size__title--big;
+    font-weight: 300;
+    line-height: $font-size__text--big;
+    padding-top: 16px;
+  }
 }
 
 .banner__form-page, .banner__photo-page {

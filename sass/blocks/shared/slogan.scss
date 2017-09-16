@@ -1,7 +1,8 @@
 .slogan {
   display: block;
   text-align: center;
-  padding: 43px 0 32px 0;
+  padding: 46px 0 32px 0;
+  margin-bottom: 17px;
 }
 
 .slogan__title {
@@ -11,6 +12,13 @@
   &:first-child {
     margin-bottom: 34px;
   }
+}
+
+.slogan__text {
+  width: 250px;
+  margin: 0 auto;
+  font-size: $font-size__text--more;
+  line-height: $font-size__text--big;
 }
 
 @media (min-width: $tablet-widths) {
