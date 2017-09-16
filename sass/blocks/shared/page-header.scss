@@ -236,7 +236,7 @@
   }
   .page-header__wrapper {
     display: flex;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 36px;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -255,6 +255,9 @@
   }
   .page-header__btn-close {
     display: none;
+  }
+  .page-header__item {
+    display: block;
   }
   .page-header__item>.page-header__link {
     background-color: transparent;

@@ -249,7 +249,7 @@
     margin-top: auto;
   }
   .presentation__btn-container {
- margin-left: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -260,12 +260,12 @@
     padding-bottom: 27px;
   }
   .presentation__title-container {
-    padding: 5px 0 66px;
+    padding: 40px 0 36px;
   }
   .presentation__wrapper {
     max-width: 940px;
     margin: 0 auto;
-    padding: 56px 61px 56px 80px;
+    padding: 56px 0 50px 60px;
   }
   .presentation__link-img,
   .presentation__img {
@@ -276,11 +276,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-content: space-between;
-    width: 411px;
+    margin-right: 60px;
+    width: 490px;
+  }
+  .presentation__list {
+   margin: 0 0 0 80px;
   }
   .presentation__list,
   .presentation__item {
     width: 411px;
+  }
+  .presentation__list-container {
+    width: 600px;
   }
   .presentation__tool {
     width: 411px;
@@ -312,5 +319,11 @@
     width: 185px;
     padding: 15px 45px;
     margin-top: 0;
+  }
+  .presentation__btn-container {
+    display: flex;
+    justify-content: space-around;
+   width: 450px;
+   padding-left: 50px;
   }
 }

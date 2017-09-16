@@ -82,7 +82,9 @@
     padding-top: 0;
     background-position: center bottom, center bottom -105px;
     min-height: 437px;
-
+  }
+  .banner__photo-page {
+    min-height: 342px;
   }
   .banner__index {
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
@@ -118,6 +120,9 @@
     .banner {
       background-size: 1050px, cover;
       background-position: bottom right, center top;
+    }
+    .banner__inner {
+      padding: 20px 360px 0 0;
     }
     .banner__form-page,
     .banner__photo-page {
