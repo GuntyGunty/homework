@@ -27,11 +27,12 @@
   &:before {
     content: '';
     position: absolute;
-    top: 0px;
+    top: -90px;
     display: block;
     height: 100%;
     transform-origin: left top;
-    transform: skewY(-5deg);
+    background-image: url('../img/bg-triangle-white.svg');
+    background-repeat: no-repeat;
     background-color: inherit;
     width: 100%;
     z-index: -1;
@@ -42,6 +43,7 @@
   font-size: $font-size__title;
   line-height: $font-size__title;
   font-weight: 600;
+  color: $color-black;
 }
 
 .offer__list {
@@ -144,10 +146,10 @@
     &>.offer__text:first-child {
       margin-bottom: 0;
     }
-    &>.offer__text:last-child {
-      width: 400px;
-      display: inline-block;
-    }
+  }
+  .offer__text:last-child {
+    width: 400px;
+    display: inline-block;
   }
   .offer__break {
     display: inline
@@ -173,11 +175,12 @@
     text-align: left;
     @media (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
       background-image: url(../img/iphone-screen-3-tablet@2x.png);
-      background-size: 268px, 481px;
+      background-size: 259px, 481px;
     }
   }
   .offer__item {
     margin: 20px 0 0 20px;
+    width: 300px;
     &>.offer__item-text {
       margin-bottom: 36px;
     }
@@ -214,8 +217,8 @@
     margin: 0 auto;
   }
   .offer__title {
-    padding-top: 74px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 135px;
     &>.offer__text {
       font-size: $font-size__title--hugest;
     }
@@ -226,8 +229,7 @@
     margin: 0 auto;
     padding: 0;
     background: none;
-    justify-content: space-around;
-    margin-top: -118px;
+    margin-top: -142px;
     margin-right: 120px;
     padding-bottom: 67px;
     position: relative;
@@ -237,12 +239,20 @@
   .offer__item {
     text-align: center;
     flex-basis: 240px;
+    margin-left: 0;
     &:before {
       content: '';
       padding-top: 362px;
       display: block;
       background-repeat: no-repeat;
       background-position: center top;
+    }
+    &:nth-child(1) {
+      margin-left: 20px;
+      margin-right: 85px;
+    }
+    &:nth-child(2) {
+      margin-right: 80px;
     }
     &:nth-child(1):before {
       background-image: url(../img/iphone-screen-1-desktop@1x.png);
@@ -260,13 +270,18 @@
     }
   }
   .offer__text {
-    font-weight: 400;
+    font-weight: 300;
+    &:nth-child(2) {
+      width: 600px;
+      line-height: 60px;
+    }
   }
   .offer__item-title {
-    font-size: $font-size__text--big;
+    font-size: 26px;
     line-height: $font-size__text--big;
-    font-weight: 300;      
+    font-weight: 300;
   }
+ 
   .offer__effect-block {
     background-color: $color-white-gray;
   }
@@ -291,7 +306,6 @@
     line-height: $font-size__text--big;
     margin-bottom: 24px;
   }
-
   .offer__effect-description {
     width: 650px;
     font-size: $font-size__title;
