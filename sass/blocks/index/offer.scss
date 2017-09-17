@@ -280,8 +280,11 @@
     font-size: 26px;
     line-height: $font-size__text--big;
     font-weight: 300;
+    &:nth-last-child(2) {
+      display: inline-block;
+      width: 150px;
+    }
   }
- 
   .offer__effect-block {
     background-color: $color-white-gray;
   }
